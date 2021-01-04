@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box;        
+}
+
+html,body {
+	margin: 0px; 
+	padding: 0px;
+	
+}
+
+.homepage{
+	text-align:center;
+	position:relative;
+}
+
+.homepage h1{
+	font-family: 'Titillium Web',sans-serif;
+	letter-spacing: 0.5px;
+	font-weight:400;
+	padding:50px;
+	font-size:40px;
+
+}
+
+.homepage h4{
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 0.5px;
+	margin-top:-50px;
+	padding-bottom:50px;
+	
+}
+
+.homepage ul{
+	list-style: none;
+	font-family: 'Playfair Display', serif;
+	text-transform:uppercase;
+	background-color:#016BAB;
+	font-size:25px;
+	padding:90px 0;
+	color:white;
+}
+
+.homepage ul li{
+	width:100%;
+	padding:3px 0;
+}
+
+.homepage li:before{
+	content:'+';
+	font-size:25px;
+	font-weight:bold;
+	margin-right: 4px;
+	margin-top: 4px;
+
+}
+
+.homepage a{
+	text-decoration: none;
+	color:white;
+	letter-spacing: 1px;
+	width:100%;
+}
+
+.homepage li:hover a{
+	color:black;
+	background-color:white;
+	font-color:black;
+}
+
+.homepage li:hover {
+	color:black;
+	background-color:white;
+	font-color:black;
+}
+
+#exhibition {
+	background-color:black;
+}
+.architecture{
+	position:relative;
+}
+
+
+.row {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.row .column{
+	flex:25%;
+	max-width:25%;
+	position:relative;
+}
+
+
+.row .column a img{
+	width:100%;
+	vertical-align: middle;
+	filter:grayscale(100%);
+}
+
+.row .column a img:hover{
+	z-index:1;
+	filter:grayscale(0%) drop-shadow(5px 5px 10px gray);
+	cursor:pointer;
+
+}
+
+/* to fit moble screen for the photography page */
+@media screen and (max-width: 1000px) {
+  .row .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.menu{
+	z-index:1;
+	width:35px;
+	height:35px;
+	top:10px;
+	left:10px;
+	position:absolute;
+
+}
+
+
+
+.artistbooks .container{
+	background-color:white;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 0.5px;
+	display:flex;
+	flex-wrap:wrap;
+	opacity:1;
+	transition:1s all;
+
+}
+
+.artistbooks .left{
+	width:50%;
+	background:white;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+	padding-right:35px;
+
+
+}
+
+.artistbooks .photos{
+	max-width: 250px;
+	max-height:300px;
+	margin-top:20%;
+	background-color:none;
+}
+
+.artistbooks .photos img{
+	width:100%;
+	height:auto;
+
+}
+.description{
+	background:white;
+	max-width:550px;
+	margin-top:25px;
+	font-size:14px;
+	line-height: 1.5;
+	text-align:right;
+	color:black;
+}
+
+ .description span{
+	font-size:25px;
+}
+
+
+.artistbooks .right{
+	width:50%;
+	right:50%;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	align-content: flex-start;
+	padding-left:35px;
+	background-color:white;
+}
+
+.artistbooks .artist{
+	background:none;
+	margin-top:22%;
+	font-size:36px;
+	font-weight:bolder;
+}
+
+.artistbooks .books{
+	margin:30px 0 10px 0;
+	max-width:90%;
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+.artistbooks .books img{
+	max-width:200px;
+	padding:0 30px 30px 0;
+	height:auto;
+	position:relative;
+}
+
+
+}
+
+.goback img{
+	width:40px;
+	height:40px;
+
+}
+
+.goback{
+	background-color:transparent;
+	border:none;
+	top:10px;
+	right:10px;
+	position:absolute;
+
+}
+
+.goback:hover{
+	cursor:pointer;
+}
+
+.infopopup{
+	opacity:0;
+	display:inline-block;
+	background-color:#016BAB;
+	color:white;
+	padding:30px 20px 20px 20px;
+	position:relative;
+	margin:15px 0px;
+	max-width:500px;
+	height:180px;
+	letter-spacing: 1px;
+
+}
+
+.visible {
+	opacity:1;
+	transition:0.8s all;
+}
+
+.booktitle{
+	text-align:center;
+	font-size:17px;
+}
+
+.availability{
+	text-align:center;
+}
+
+.books img:hover{
+	cursor:pointer;
+	filter:grayscale(100%);
+}
+
+
+/* to fit moble screen for the artists & books information page */
+@media screen and (max-width: 700px) {
+ .artistbooks .left {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ .artistbooks .right {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
